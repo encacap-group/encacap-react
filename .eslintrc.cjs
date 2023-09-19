@@ -8,13 +8,12 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:prettier/recommended',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.ts'],
+  ignorePatterns: ['dist', '*.cjs', 'vite.config.ts'],
   parserOptions: {
     project: './tsconfig.json',
   },
-  plugins: ['react-refresh'],
+  plugins: [],
   rules: {
-    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     'react/function-component-definition': ['warn', { namedComponents: 'arrow-function' }],
   },
 };

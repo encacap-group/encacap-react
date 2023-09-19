@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { memo, useState } from 'react';
 import reactLogo from './assets/react.svg';
 
 const App = () => {
@@ -25,4 +25,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default memo(App);
